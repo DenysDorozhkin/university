@@ -1,0 +1,8 @@
+**/node_modules
+**/uploadedFiles
+**/.env
+**/todo.txt
+.vscode
+**/build
+*.log
+*.env

@@ -1,0 +1,20 @@
+.page {
+  padding: 15px 32px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  margin-bottom: 32px;
+  & img {
+    &:first-child {
+      width: 42px;
+      height: 42px;
+    }
+    &:last-child {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

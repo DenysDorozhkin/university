@@ -1,0 +1,21 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 10px;
+}
+
+.logo {
+  margin-bottom: 44px;
+}
+
+.title {
+  font-weight: 700;
+  color: #000;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 32px;
+  position: relative;
+}

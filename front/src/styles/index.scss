@@ -1,0 +1,40 @@
+@import "_null";
+
+// FONTS
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&display=swap"); // font-family: 'Lexend', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap"); // font-family: 'Nunito', sans-serif;
+// FONTS
+
+// VARIABLES
+$fontSize: 14px;
+$fontFamily: "Lexend", sans-serif;
+// $minWidth: 320px;
+// $maxWidth: 1440px;
+// $maxWidthContainer: 1270px;
+// $md1: $maxWidthContainer + 12px;
+// $md2: 991.98px;
+// $md3: 767.98px;
+// $md4: 479.98px;
+$textColor: #505e68;
+
+// :root {}
+// VARIABLES
+
+body {
+  // -moz-user-select: none;
+  // -khtml-user-select: none;
+  // user-select: none;
+
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  background-color: #fff;
+  color: $textColor;
+
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+input[type="file"] {
+  display: none;
+}

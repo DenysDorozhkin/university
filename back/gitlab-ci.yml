@@ -1,0 +1,51 @@
+stages:
+  - prepare
+  - code-analysis
+  - deploy
+
+prepare:
+  image: node:latest
+  stage: prepare
+  script:
+    - npm ci
+  artifacts:
+    paths:
+      - node_modules/
+
+lint:
+  image: node:latest
+  stage: code-analysis
+  script:
+    - npm run lint
+  dependencies:
+    - prepare
+
+# test:
+#   image: node:latest
+#   stage: code-analysis
+#   script:
+#     - npm run test
+#   dependencies:
+#     - prepare
+
+audit:
+  image: node:latest
+  stage: code-analysis
+  script:
+    - npm run audit
+  dependencies:
+    - prepare
+
+deploy:
+  stage: deploy
+  image: ruby:latest
+  script:
+    - apt-get update -qy
+    - apt-get install -y ruby-dev
+    - gem install dpl
+    - dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY
+  only:
+    - main
+  environment:
+    name: production
+    url: https://$HEROKU_APP_NAME.herokuapp.com

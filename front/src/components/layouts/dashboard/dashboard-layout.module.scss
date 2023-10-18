@@ -1,0 +1,9 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  background-color: #f8f8f8;
+  width: 100%;
+  &__content {
+    width: calc(100% - 260px);
+  }
+}

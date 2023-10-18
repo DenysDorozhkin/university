@@ -1,0 +1,82 @@
+.dashboard {
+  width: 260px;
+  background-color: #3f1e85;
+  padding-bottom: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: 14px;
+  line-height: 19.6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  height: 72px;
+  padding: 14px 31px;
+  border-bottom: 1px solid rgba(255, 255, 255, 8%);
+  margin-bottom: 20px;
+  & img {
+    width: 42px;
+  }
+}
+
+.menu {
+  & li {
+    height: 52px;
+    padding: 16px 32px 16px 20px;
+
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 8%);
+    display: flex;
+
+    & img {
+      width: 18px;
+      margin-right: 14px;
+    }
+
+    & a {
+      color: #fff;
+      opacity: 80%;
+      transition: 0.3s ease-out;
+      @media (any-hover: hover) {
+        &:hover {
+          opacity: 100%;
+        }
+      }
+    }
+
+    &.active {
+      background-color: #4b259b;
+      &::before {
+        position: absolute;
+        width: 4px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        content: "";
+        background-color: #fff;
+      }
+    }
+  }
+
+  &__dashboard {
+    opacity: 80%;
+  }
+}
+
+.logout {
+  height: 56px;
+  padding: 0px 32px 16px 20px;
+  text-align: left;
+  opacity: 80%;
+  & img {
+    margin-right: 12px;
+  }
+  transition: 0.3s ease-out;
+  @media (any-hover: hover) {
+    &:hover {
+      opacity: 100%;
+    }
+  }
+}

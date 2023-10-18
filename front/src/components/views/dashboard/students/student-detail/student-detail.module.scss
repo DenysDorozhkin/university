@@ -1,0 +1,32 @@
+.screen {
+  padding: 20px 40px;
+
+  & div {
+    margin-bottom: 10px;
+    display: flex;
+    font-size: 18px;
+    color: #111112;
+    & p {
+      margin-left: 7px;
+    }
+  }
+}
+
+.back {
+  width: 100px;
+  height: 34px;
+  font-weight: 500;
+  border: 1px solid #7101ff;
+  transition: 0.3s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111112;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #7101ff;
+      color: #fff;
+    }
+  }
+}

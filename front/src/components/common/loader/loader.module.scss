@@ -1,0 +1,18 @@
+.loader {
+  position: absolute;
+  z-index: 5;
+  & svg {
+    width: 50px;
+  }
+  &.sign {
+    top: -124px;
+    right: -144px;
+  }
+  &.header {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    top: -25px;
+    right: -100px;
+  }
+}

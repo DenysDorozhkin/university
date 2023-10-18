@@ -1,0 +1,46 @@
+.error {
+  position: absolute;
+  color: #da1b41;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 8px;
+  width: 376px;
+  left: -190px;
+}
+
+.wrapper {
+  margin-top: 20px;
+  position: relative;
+}
+
+.errorDashboard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  color: #da1b41;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.errorModal {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  color: #da1b41;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.errorUpdate {
+  color: #da1b41;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 16px;
+}

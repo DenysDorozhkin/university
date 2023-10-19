@@ -69,7 +69,7 @@ export const AuthService = {
 
   async logout(): Promise<boolean> {
     const response = await axios.get<ILogoutResponse>(
-      process.env.REACT_APP_API_URL + `/api/v1${AuthRoutesEnum.LOGOUT}`
+      process.env.REACT_APP_API_URL + `/api/v1${AuthRoutesEnum.LOGOUT}`,
       {
         withCredentials: true,
       }
